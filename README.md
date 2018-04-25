@@ -6,11 +6,11 @@ VaultAWS will authenticate the user to Vault, asking for AWS keys for the specif
 
 ## Usage
 
-VaultAWS will use the environment variable VAULT_ADDR to determine which Vault instance to request keys from.  
+VaultAWS will use the environment variable VAULT_ADDR to determine which Vault instance to request keys from.
 
 ### Command Line Options
 
-```
+```console
 ./vaultaws --help
 
 usage: vaultaws --user=USER --password=PASSWORD [<flags>] <command> [<args> ...]
@@ -39,10 +39,9 @@ Commands:
     Renew your key lease
 ```
 
-
 ### Example usage
 
-```
+```console
 export VAULT_ADDR=https://YOUR_VAULT_URL
 ./bin/mac/vaultaws auth -u testUser -p testPassword -role readonly -profile test
 ```
